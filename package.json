@@ -1,5 +1,5 @@
 {
-  "name": "uncompress",
+  "name": "node-uncompress",
   "preferGlobal": true,
   "version": "0.1.0",
   "author": "Ha.Minh",
