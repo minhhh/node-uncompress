@@ -1,4 +1,5 @@
 # node-uncompress
+
 [![Build Status](https://travis-ci.org/minhhh/node-uncompress.svg?branch=master)](https://travis-ci.org/minhhh/node-uncompress)
 
 Command-line wrapper for uncompressing various file types.
