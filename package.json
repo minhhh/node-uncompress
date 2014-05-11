@@ -1,0 +1,38 @@
+{
+  "name": "uncompress",
+  "preferGlobal": true,
+  "version": "0.1.0",
+  "author": "Ha.Minh",
+  "description": "A wrapper for the command line commands to extract: tar, tar.gz, bz2, zip, rar",
+  "contributors": [
+  ],
+  "bin": {
+    "uncomp": "./lib/node-uncompress.js"
+  },
+  "scripts": {
+    "test": "./node_modules/jasmine-node/bin/jasmine-node test && cd macrotest && ./macrotest.sh",
+    "posttest" : "cd macrotest && rm -frv uncompress*"
+  },
+  "main": "./lib/uncompress",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minhhh/node-uncompress.git"
+  },
+  "keywords": [
+    "cli",
+    "zip",
+    "tar"
+  ],
+  "dependencies" : {
+    "docopt": "*",
+    "shelljs": "*"
+  },
+  "analyze": false,
+  "devDependencies": {
+    "jasmine-node"    :  "*"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
