@@ -1,7 +1,7 @@
 {
   "name": "node-uncompress",
   "preferGlobal": true,
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "Ha.Minh",
   "description": "A wrapper for the command line commands to extract: tar, tar.gz, bz2, zip, rar",
   "contributors": [
