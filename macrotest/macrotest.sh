@@ -4,7 +4,7 @@ TEST_PREFIX=uncompress
 TESTDIR=~+/`dirname $0`
 cd $TESTDIR
 
-testcases=`ls test_*.sh`
+testcases=$(ls test_*.sh)
 
 if [ "$1" != "" ]; then
     testcases="$@"
@@ -14,8 +14,8 @@ for testcase in $testcases; do
     echo -n "Executing $testcase..."
     TMPDIR=`mktemp -d "${TEST_PREFIX}-${testcase}.XXXXXX"`
     OUTPUT="${TMPDIR}.log"
-    # ( cd $TMPDIR && . $TESTDIR/${testcase} >$OUTPUT 2>&1 ) ||
-    ( cd $TMPDIR && source $TESTDIR/${testcase} ) || # uncomment to debug
+    ( cd $TMPDIR && . $TESTDIR/${testcase} >$OUTPUT 2>&1 ) ||
+    # ( cd $TMPDIR && source $TESTDIR/${testcase} ) || # uncomment to debug
         {
 	    cat $TMPDIR/$OUTPUT
 	    echo "*** Test case $testcase failed ($TMPDIR)"
