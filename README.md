@@ -1,6 +1,7 @@
 # node-uncompress
 
 [![Build Status](https://travis-ci.org/minhhh/node-uncompress.svg?branch=master)](https://travis-ci.org/minhhh/node-uncompress)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/minhhh/node-uncompress/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 Command-line wrapper for uncompressing various file types.
 
