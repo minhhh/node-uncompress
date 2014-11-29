@@ -47,3 +47,7 @@ Install via npm:
 
 ## Licence
 MIT, see LICENSE.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/minhhh/node-uncompress/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
