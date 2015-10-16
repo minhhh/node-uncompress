@@ -34,7 +34,7 @@ Examples
     uncomp file.zip -d out
 
     # Uncompress a file with type
-    uncomp file -t .tar.gz
+    uncomp file -t tar.gz
 
 ## Installation
 Install via npm:
@@ -42,7 +42,7 @@ Install via npm:
     npm install -g node-uncompress
 
 ## Depends
-  * node v0.8 and above
+  * node v0.11.10 and above
   * docopt, shelljs
   * Command line tools available in user's path: tar, unrar, unzip, bunzip2
 

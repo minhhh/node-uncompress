@@ -1,17 +1,18 @@
 {
   "name": "node-uncompress",
   "preferGlobal": true,
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": "Ha.Minh",
   "description": "A wrapper for the command line commands to extract: tar, tar.gz, bz2, zip, rar",
-  "contributors": [
-  ],
+  "contributors": [],
   "bin": {
     "uncomp": "./lib/node-uncompress.js"
   },
   "scripts": {
     "test": "./node_modules/jasmine-node/bin/jasmine-node test && cd macrotest && ./macrotest.sh",
-    "posttest" : "cd macrotest && rm -frv uncompress*"
+    "posttest": "cd macrotest && rm -frv uncompress*",
+    "lint": "jshint lib/**.js",
+    "lint:checkstyle": "npm run lint -- --reporter checkstyle > checkstyle.xml"
   },
   "main": "./lib/uncompress",
   "repository": {
@@ -21,18 +22,25 @@
   "keywords": [
     "cli",
     "zip",
-    "tar"
+    "tar",
+    "unzip",
+    "rar",
+    "unrar",
+    "p7zip",
+    "7zip"
   ],
-  "dependencies" : {
-    "docopt": "*",
-    "shelljs": "*"
+  "dependencies": {
+    "docopt": "0.6.2",
+    "shelljs": "0.5.3",
+    "sf": "0.1.8"
   },
   "analyze": false,
   "devDependencies": {
-    "jasmine-node"    :  "*"
+    "jasmine-node": "1.14.5",
+    "jshint": "~2.8.0"
   },
   "license": "MIT",
   "engines": {
-    "node": ">=0.8"
+    "node": ">=0.11.10"
   }
 }
